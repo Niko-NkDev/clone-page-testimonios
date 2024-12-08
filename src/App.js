@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Testimonio from './componentes/Testimonio.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='contenedor-principal'>
+        <h1>Mis testimonios</h1>
+        <Testimonio 
+        nombre='Sarah Pérez'
+        pais='Colombia'
+        imagen='1'
+        cargo='Ingeniera de Software'
+        empresa='Spotify'
+        testimonio='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quo.' />
+        <Testimonio
+        nombre='Ricardo Pelayo'
+        pais='Nigeria'
+        imagen='2'
+        cargo='Ingeniero de Software'
+        empresa='Amazon'
+        testimonio='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quo.' />
+        <Testimonio
+        nombre='Luisa Pérez'
+        pais='Argentina'        
+        imagen='3'
+        cargo='Ingeniera de Software'
+        empresa='Google'
+        testimonio='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quo.' />
+      </div>
     </div>
   );
 }
